@@ -89,3 +89,10 @@ def contact_view(request):
             return redirect('dojo_app:contact')
     
     return render(request, 'contact.html')
+
+
+from .models import ContactMessage
+
+def products(request):
+   return render(request, 'products.html')
+

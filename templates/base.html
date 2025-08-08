@@ -7,36 +7,60 @@
     {% load static %}
     <link rel="stylesheet" href="{% static 'css/style.css' %}">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{% static 'css/owl.carousel.min.css' %}">
+<link rel="stylesheet" href="{% static 'css/owl.theme.default.min.css' %}" >
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+<!-- Add Bootstrap CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+<!-- Add FontAwesome -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
+<!-- Add Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     
 </head>
 <body>
-    <header class="header">
-        <nav class="navbar">
-            <div class="nav-container">
-                <div class="nav-logo">
-                    <h2 class="nav-logo-title gradient-text shimmer-text">NL Technologies<br>Digital Transformation Platform</h2>
-
-                </div>
-                <ul class="nav-menu">
-                    <li class="nav-item">
-                        <a href="{% url 'dojo_app:home' %}" class="nav-link">Home</a>
-                    </li>
-                  
-                    <li class="nav-item">
-                        <a href="{% url 'dojo_app:contact' %}" class="nav-link">Products and Services</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="{% url 'dojo_app:contact' %}" class="nav-link">Contact</a>
-                    </li>
-                </ul>
-                <div class="hamburger">
-                    <span class="bar"></span>
-                    <span class="bar"></span>
-                    <span class="bar"></span>
+<header class="header">
+    <nav class="navbar">
+        <div class="nav-container">
+            <!-- Logo Section - Left -->
+            <div class="nav-logo">
+                <div class="logo-container">
+                    <img src="{% static 'images/logo.jpg' %}" alt="NL Technologies Logo" class="logo-image">
+                    <div class="logo-text">
+                        
+                    </div>
                 </div>
             </div>
-        </nav>
-    </header>
+
+            <!-- Platform Title - Center -->
+            <div class="platform-title">
+                Digital Transformation Platform
+            </div>
+
+            <!-- Navigation Menu - Right -->
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a href="{% url 'dojo_app:home' %}" class="nav-link">Home</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a href="{% url 'dojo_app:products' %}" class="nav-link">Products & Services</a>
+                </li> -->
+                <li class="nav-item">
+                    <a href="{% url 'dojo_app:contact' %}" class="nav-link">Contact</a>
+                </li>
+            </ul>
+
+            <!-- Hamburger Menu -->
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+</header>
+
+
 
     <main>
         <!-- {% if messages %}
@@ -63,8 +87,8 @@
                 <h4>Quick Links</h4>
                 <ul>
                     <li><a href="{% url 'dojo_app:home' %}">Home</a></li>
-                    <li><a href="{% url 'dojo_app:contact' %}">Our Partners</a></li>
-                    <li><a href="{% url 'dojo_app:contact' %}">Products and Services</a></li>
+       
+                    <li><a href="{% url 'dojo_app:products' %}">Products and Services</a></li>
                     <li><a href="{% url 'dojo_app:contact' %}">Contact</a></li>
                     
                 </ul>

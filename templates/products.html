@@ -1,0 +1,148 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<section class="other-platforms-section">
+  <div class="other-platform-container">
+    <h2 class="section-title">Our Other Digital Transformation Platforms</h2>
+
+    <div class="platforms-grid">
+      <!-- Platform Items -->
+      <div class="platform-card">
+        <i class="fas fa-random"></i>
+        <span>Change Management</span>
+      </div>
+
+     <div class="platform-card" style="background: white; padding: 40px 20px; border-radius: 20px; box-shadow: 0 8px 20px rgba(0,0,0,0.1); text-align: center;">
+                <img src="/static/images/redbin.png" alt="Redbin Analysis" style="height: 40px;" />
+                <span style="display: block; margin-top: 12px; font-weight: 700;">Redbin Analysis</span>
+            </div>
+
+      <div class="platform-card">
+        <i class="fas fa-cogs"></i>
+        <span>4M Management</span>
+      </div>
+
+      <div class="platform-card">
+        <i class="fas fa-clipboard-check"></i>
+        <span>Quality Management System</span>
+      </div>
+
+      <div class="platform-card">
+        <i class="fas fa-file-signature"></i>
+        <span>APQP</span>
+      </div>
+
+      <div class="platform-card">
+        <i class="fas fa-search"></i>
+        <span>Quality Inspection</span>
+      </div>
+
+      <div class="platform-card">
+        <i class="fas fa-industry"></i>
+        <span>Work In Progress</span>
+      </div>
+
+      <div class="platform-card">
+        <i class="fas fa-warehouse"></i>
+        <span>WMS</span>
+      </div>
+
+      <div class="platform-card">
+        <i class="fas fa-tools"></i>
+        <span>Asset Management</span>
+      </div>
+
+      <div class="platform-card">
+        <i class="fas fa-boxes"></i>
+        <span>Inventory Management</span>
+      </div>
+    </div>
+  </div>
+</section>
+{% endblock %}
+
+<style>
+/* Section Styling */
+
+/* 
+.other-platforms-section {
+  padding: 60px 20px;
+  background-color: #f8f9fc;
+  margin-top:500%;
+} */
+
+.other-platforms-section .other-container {
+  max-width: 1000px;
+  margin-top: 150%;
+
+}
+
+/* Section Title */
+.section-title {
+  text-align: center;
+  font-size: 2.4rem;
+  font-weight: 800;
+  color: transparent;
+  background: linear-gradient(90deg, #4b6cb7, #182848);
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: shimmer 2s linear infinite;
+  background-size: 200% auto;
+  margin-bottom: 40px;
+}
+
+/* Grid Layout */
+.platforms-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 30px;
+}
+
+/* Card Styles */
+.platform-card {
+  background: #ffffff;
+  padding: 40px 20px;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.platform-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Icon Styles */
+.platform-card i {
+  font-size: 36px;
+  color: #3f51b5;
+  margin-bottom: 12px;
+}
+
+/* Image Styling */
+.platform-icon-img {
+  width: 42px;
+  height: 42px;
+  object-fit: contain;
+  margin-bottom: 12px;
+}
+
+/* Text Styling */
+.platform-card span {
+  display: block;
+  margin-top: 8px;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+/* Shimmer Effect */
+@keyframes shimmer {
+  0% {
+    background-position: -1000px 0;
+  }
+  100% {
+    background-position: 1000px 0;
+  }
+}
+</style>
